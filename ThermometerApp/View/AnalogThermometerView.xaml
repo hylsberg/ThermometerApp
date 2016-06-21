@@ -1,0 +1,83 @@
+﻿<Window x:Class="ThermometerApp.AnalogThermometerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThermometerApp"
+        mc:Ignorable="d"
+         Title="{Binding Path=Thermometer.SerialNr}" Height="350" Width="300" MinHeight="330" MinWidth="230"
+        local:AttachedBehaviours.ClosedCommand="{Binding CloseCommand}" Background="GhostWhite" >
+    <Window.Resources>
+        <local:ColorConverter x:Key="colorconverterInstance"/>
+        <Style x:Key="pathStyle" TargetType="Path">
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="StrokeThickness" Value="3"/>
+        </Style>
+    </Window.Resources>
+    <Grid Name="MainGrid"  VerticalAlignment="Center" Height="250">
+        <Grid HorizontalAlignment="Center" >
+            <Canvas local:AttachedBehaviours.MouseOverCommand="{Binding OnMouseOverCommand}" 
+                   local:AttachedBehaviours.MouseOutCommand="{Binding OnMouseOutCommand}"  Margin="10 0 0 0">
+                <Path Style="{StaticResource pathStyle}" Fill="GhostWhite" >
+
+                    <Path.Data>
+                        <CombinedGeometry GeometryCombineMode="Union">
+                            <CombinedGeometry.Geometry1>
+                                <RectangleGeometry Rect="20,20 20,210" />
+
+
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry Center="30,20" RadiusX="10" RadiusY="10"/>
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </Path.Data>
+
+                </Path>
+                <Path Style="{StaticResource pathStyle}"  Fill="{Binding Path=Thermometer.Mode, Converter={StaticResource colorconverterInstance}}">
+
+                    <Path.Data>
+                        <CombinedGeometry GeometryCombineMode="Union">
+                            <CombinedGeometry.Geometry1>
+                                <RectangleGeometry Rect="20,200 20,20" >
+                                    <RectangleGeometry.Transform >
+                                        <ScaleTransform x:Name="scaleTransform"  CenterY="220" CenterX="30"/>
+                                        <!--<ScaleTransform ScaleY="{Binding Path=TubeScale}" CenterY="220" CenterX="30"/>-->
+                                    </RectangleGeometry.Transform>
+                                </RectangleGeometry>
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry Center="30,230" RadiusX="15" RadiusY="15"/>
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </Path.Data>
+                </Path>
+                <Path Stroke="Black" StrokeThickness="0.6">
+                    <Path.Data>
+                        <PathGeometry Figures="M 20,200 30,200 M 20,182 30,182 M 20,164 30,164 M 20,146 30,146 M 20,128 30,128 
+                                      M 20,110 30,110 M 20,92 30,92 M 20,74 30,74 M 20,56 30,56 M 20,38 30,38 M 20,20 30,20" />
+                    </Path.Data>
+                </Path>
+                <Path Stroke="Black" StrokeThickness="0.3">
+                    <Path.Data>
+                        <PathGeometry Figures="M 20,191 25,191 M 20,173 25,173 M 20,155 25,155 M 20,137 25,137 M 20,119 25,119 
+                                      M 20,101 25,101 M 20,83 25,83 M 20,65 25,65 M 20,47 25,47 M 20,29 25,29 " />
+                    </Path.Data>
+                </Path>
+            </Canvas>
+            <ItemsControl ItemsSource="{Binding LabelContent}" Margin="5 11 0 0">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel HorizontalAlignment="Stretch"
+                        IsItemsHost="True" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding}" Height="18" Margin="0" Padding="0" HorizontalContentAlignment="Right"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </Grid>
+</Window>

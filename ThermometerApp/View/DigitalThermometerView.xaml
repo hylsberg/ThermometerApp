@@ -1,0 +1,24 @@
+﻿<Window x:Class="ThermometerApp.DigitalThermometerView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThermometerApp"
+        mc:Ignorable="d"
+        Title="{Binding Path=Thermometer.SerialNr}" Height="300" Width="300" MinHeight="150" MinWidth="275"
+        local:AttachedBehaviours.ClosedCommand="{Binding CloseCommand}" Background="GhostWhite">
+    <Window.Resources>
+        <local:ColorConverter x:Key="colorconverterInstance"/>
+    </Window.Resources>
+    <Grid Name="MainGrid">
+        <Border Width="200" Height="75" BorderThickness="4" CornerRadius="15 0 15 0" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Background="Black" 
+                BorderBrush="{Binding Path=Thermometer.Mode, Converter={StaticResource colorconverterInstance}}">
+            <Label Content="{Binding TxtTemperature}" local:AttachedBehaviours.MouseOverCommand="{Binding OnMouseOverCommand}" 
+                   local:AttachedBehaviours.MouseOutCommand="{Binding OnMouseOutCommand}"  
+                   Foreground="{Binding Path=Thermometer.Mode, Converter={StaticResource colorconverterInstance}}" 
+                    FontFamily="Tahoma" FontSize="30" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                   FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ThermometerApp.CommonBase" Collapsed="true">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.MainModel" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgABAAAQgACAABAAIAABABAAAQAYABAARACAY=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.ModelConfig" Collapsed="true">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAABAACAAAA=</HashCode>
+      <FileName>Model\ModelConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.ModelThermometer" Collapsed="true">
+    <Position X="1.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAIAEAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\ModelThermometer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.Thermometer" Collapsed="true">
+    <Position X="1.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIgAKAAAAyBAAAJBQAAAAkAAAAAIAQBAAAECAA=</HashCode>
+      <FileName>Model\Thermometer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="ThermometerApp.ThermometerRepository" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAAAAAAAAAAAAABAAABABAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Model\ThermometerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

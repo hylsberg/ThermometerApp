@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ThermometerApp.AnalogThermometerView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AnalogThermometerView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.AnalogThermometerViewModel" Collapsed="true">
+    <Position X="1.75" Y="7.25" Width="2.75" />
+    <InheritanceLine Type="ThermometerApp.ThermometerViewModel" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="6.441" />
+        <Point X="3.75" Y="6.875" />
+        <Point X="3.24" Y="6.875" />
+        <Point X="3.24" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\AnalogThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.AttachedBehaviours" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAIAAAAAAAAAAAAAgAACAARAAABQCAAQBI=</HashCode>
+      <FileName>View\AttachedBehaviours.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.ColorConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.CommonBase" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.DigitalThermometerView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\DigitalThermometerView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.DigitalThermometerViewModel" Collapsed="true">
+    <Position X="4.75" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\DigitalThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.GridView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\GridView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.GridViewModel" Collapsed="true">
+    <Position X="1.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\GridViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.MainModel" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgIgAAAAAQgACAABAAAAAJABAAAQAYABABRACAQ=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.MainWindowViewModel" Collapsed="true">
+    <Position X="5" Y="6" Width="2.25" />
+    <InheritanceLine Type="ThermometerApp.CommonBase" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="4.312" />
+        <Point X="9.5" Y="5.365" />
+        <Point X="5.5" Y="5.365" />
+        <Point X="5.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAEAAwBAAAkAQAABggEAA5YAAQ=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.ModelConfig" Collapsed="true">
+    <Position X="9.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAABAACAAAA=</HashCode>
+      <FileName>Model\ModelConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.ModelThermometer" Collapsed="true">
+    <Position X="12.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAEAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\ModelThermometer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.Thermometer" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="ThermometerApp.CommonBase" ManuallyRouted="true">
+      <Path>
+        <Point X="9.5" Y="4.312" />
+        <Point X="9.5" Y="5.367" />
+        <Point X="13.75" Y="5.367" />
+        <Point X="13.75" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAKAAAAyBAAAJBQAAAAkAAAAAIgQBAAAECAA=</HashCode>
+      <FileName>Model\Thermometer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.ThermometerRepository" Collapsed="true">
+    <Position X="10.5" Y="5.75" Width="2.25" />
+    <InheritanceLine Type="ThermometerApp.CommonBase" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="4.312" />
+        <Point X="9.5" Y="5.375" />
+        <Point X="11.531" Y="5.375" />
+        <Point X="11.531" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAAAAAAAAAAAAABAAABABAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Model\ThermometerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.ThermometerViewModel" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="ThermometerApp.CommonBase" FixedToPoint="true">
+      <Path>
+        <Point X="9.5" Y="4.312" />
+        <Point X="9.5" Y="5.375" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="3.625" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAAAAAAAAAAAggREAAAEBAAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>ViewModel\ThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.WindowFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\WindowFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ThermometerApp.IWindowFactory" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IWindowFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ThermometerApp.ThermometerType" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ThermometerApp.MeasureType" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAIAAAAAAggAAAAAAA=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ThermometerApp.ThermometerMode" Collapsed="true">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\Thermometer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

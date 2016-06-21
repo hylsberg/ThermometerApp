@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Assosiation to model">
+    <Position X="11.176" Y="8.839" Height="0.378" Width="1.447" />
+  </Comment>
+  <Comment CommentText="Assosiation to view">
+    <Position X="2.082" Y="7.881" Height="0.378" Width="1.447" />
+  </Comment>
+  <Class Name="ThermometerApp.CommonBase">
+    <Position X="1" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommonBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.AnalogThermometerViewModel">
+    <Position X="7" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\AnalogThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.DigitalThermometerViewModel">
+    <Position X="4" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\DigitalThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.GridViewModel" Collapsed="true">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModel\GridViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThermometerApp.MainWindowViewModel">
+    <Position X="0.75" Y="2.75" Width="2.5" />
+    <AssociationLine Name="overviewCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.03" Y="0.006" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="clearCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.125" Y="0.015" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="model" Type="ThermometerApp.MainModel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.06" Y="0.393" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="createCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.08" Y="0" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAEAAwBAAAkAQAABggEAA5YAAQ=</HashCode>
+      <FileName>ViewModel\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="windowFactory" />
+      <Field Name="overviewCommand" />
+      <Field Name="clearCommand" />
+      <Field Name="model" />
+      <Field Name="createCommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ThermometerApp.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ThermometerApp.ThermometerViewModel">
+    <Position X="8.25" Y="2.75" Width="2.25" />
+    <AssociationLine Name="onMouseOverCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.125" Y="0" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="onMouseOutCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.125" Y="0.03" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="closeCommand" Type="ThermometerApp.RelayCommand">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.015" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAAAAAAAAAAAggREAAAEBAAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>ViewModel\ThermometerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="onMouseOverCommand" />
+      <Field Name="onMouseOutCommand" />
+      <Field Name="closeCommand" />
+      <Field Name="thermometer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ThermometerApp.Thermometer" Collapsed="true">
+    <Position X="11.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAKAAAAyBAAAJBQAAAAkAAAAAIgQBAAAECAA=</HashCode>
+      <FileName>Model\Thermometer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ThermometerApp.MainModel" Collapsed="true">
+    <Position X="12.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgIgAAAAAQgACAABAAAAAJABAAAQAYABABRACAQ=</HashCode>
+      <FileName>Model\MainModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ThermometerApp.IWindowFactory" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IWindowFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
